@@ -1,6 +1,17 @@
-# 10x Astro Starter
+# HealthyMeal
 
-A modern, opinionated starter template for building fast, accessible, and AI-friendly web applications.
+A web application that allows users to customize recipes according to their personal needs and dietary preferences with AI assistance.
+
+## Project Description
+
+HealthyMeal is a browser application that enables users to browse recipes, modify ingredients with AI assistance, add their own recipes, and filter available dishes based on various criteria. The application helps users adapt recipes to their specific dietary needs while maintaining flavor and nutritional value.
+
+### Main Features
+- User account system with full management (registration, login, edit, delete)
+- Recipe catalog from a dedicated database and ability to add your own recipes
+- Intelligent recipe modifications with ingredient substitute suggestions
+- Advanced recipe filtering by preferences (sweet/savory, calorie content, difficulty level)
+- Recipe rating system on a 1-5 star scale
 
 ## Tech Stack
 
@@ -8,19 +19,24 @@ A modern, opinionated starter template for building fast, accessible, and AI-fri
 - [React](https://react.dev/) v19.0.0 - UI library for building interactive components
 - [TypeScript](https://www.typescriptlang.org/) v5 - Type-safe JavaScript
 - [Tailwind CSS](https://tailwindcss.com/) v4.0.17 - Utility-first CSS framework
+- [Shadcn/ui](https://ui.shadcn.com/) - Accessible React component library
+- [Supabase](https://supabase.com/) - Backend-as-a-Service providing PostgreSQL database and authentication
+- [OpenRouter.ai](https://openrouter.ai/) - AI model access for ingredient substitution features
 
-## Prerequisites
+## Getting Started Locally
+
+### Prerequisites
 
 - Node.js v22.14.0 (as specified in `.nvmrc`)
 - npm (comes with Node.js)
 
-## Getting Started
+### Installation
 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/przeprogramowani/10x-astro-starter.git
-cd 10x-astro-starter
+git clone https://github.com/yourusername/healthymeal.git
+cd healthymeal
 ```
 
 2. Install dependencies:
@@ -29,65 +45,56 @@ cd 10x-astro-starter
 npm install
 ```
 
-3. Run the development server:
+3. Create a `.env` file based on the provided `.env.example` template and fill in the required environment variables.
+
+4. Run the development server:
 
 ```bash
 npm run dev
 ```
 
-4. Build for production:
-
-```bash
-npm run build
-```
+5. Open your browser and navigate to `http://localhost:4321` to see the application.
 
 ## Available Scripts
 
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
+- `npm run astro` - Run Astro CLI commands
 - `npm run lint` - Run ESLint
 - `npm run lint:fix` - Fix ESLint issues
+- `npm run format` - Format code with Prettier
 
-## Project Structure
+## Project Scope
 
-```md
-.
-├── src/
-│   ├── layouts/    # Astro layouts
-│   ├── pages/      # Astro pages
-│   │   └── api/    # API endpoints
-│   ├── components/ # UI components (Astro & React)
-│   └── assets/     # Static assets
-├── public/         # Public assets
-```
+### What the Product Will Do
+- Enable user account management
+- Present a recipe catalog with filtering options
+- Allow recipe modification and suggest ingredient substitutes
+- Let users add their own recipes (limited to 5 per user)
+- Provide a recipe rating system
+- Work as a browser application with responsive design
 
-## AI Development Support
+### What the Product Will Not Do
+- No user notifications
+- No ability to add more than 5 custom recipes per user
+- No editing of entire recipes, only ingredients
+- No social features (recipe sharing, commenting, etc.)
+- No mobile app (only responsive website)
+- No information about ingredient availability in stores
+- No multi-day meal planning
 
-This project is configured with AI development tools to enhance the development experience, providing guidelines for:
+## Project Status
 
-- Project structure
-- Coding practices
-- Frontend development
-- Styling with Tailwind
-- Accessibility best practices
-- Astro and React guidelines
+This project is currently in development. The initial version focuses on core functionality including:
 
-### Cursor IDE
+- User authentication and profile management
+- Basic recipe browsing and filtering
+- AI-powered ingredient substitution
+- Custom recipe addition
+- Recipe rating system
 
-The project includes AI rules in `.cursor/rules/` directory that help Cursor IDE understand the project structure and provide better code suggestions.
-
-### GitHub Copilot
-
-AI instructions for GitHub Copilot are available in `.github/copilot-instructions.md`
-
-### Windsurf
-
-The `.windsurfrules` file contains AI configuration for Windsurf.
-
-## Contributing
-
-Please follow the AI guidelines and coding practices defined in the AI configuration files when contributing to this project.
+Future updates may include more advanced filtering options, additional AI features, and improved user experience based on feedback and metrics.
 
 ## License
 
